@@ -1,15 +1,14 @@
-# Alfresco Share JAR Module - SDK 4.0
+# Alfresco Share JAR Module - SDK 4.1
 
-This is a Share project for Alfresco SDK 4.0.
+This is a Share project for Alfresco SDK 4.1.
 
 Run with `./run.sh build_start` or `./run.bat build_start` and verify that it
 
- * Runs Alfresco Content Service (ACS)
  * Runs Alfresco Share
- * Runs Alfresco Search Service (ASS)
- * Runs PostgreSQL database
  * Deploys the JAR assembled module
- 
+
+_WARN:_ This project need the jgisson-platform-jar-sdk4 project for Alfresco ACS
+
 All the services of the project are now run as docker containers. The run script offers the next tasks:
 
  * `build_start`. Build the whole project, recreate the Share docker image, start the dockerised environment composed by ACS, Share, ASS and 
